@@ -1,0 +1,21 @@
+{
+  "id": "juhilmodi/match-the-dish-to-its-rizz-top-score-model",
+  "id_no": 139056269,
+  "title": "Match the Dish to Its Rizz - Top Score Model",
+  "code_file": "notebook.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": ["siglip2", "so400m", "optimal-transport", "sinkhorn", "food-retrieval"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "match-the-dish-to-its-rizz"
+  ],
+  "model_sources": [],
+  "docker_image": "",
+  "machine_shape": "NvidiaTeslaT4"
+}

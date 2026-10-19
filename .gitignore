@@ -1,0 +1,43 @@
+# Competition Image Galleries & Heavy Archives
+data/train_gallery/
+data/test_gallery/
+data/validation_gallery/
+**/train_gallery/
+**/test_gallery/
+**/validation_gallery/
+*.zip
+*.tar
+*.tar.gz
+
+# Checkpoint Weights & Cached Embeddings
+*.pt
+*.pth
+*.bin
+*.npy
+*.npz
+*.safetensors
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook & Editor Settings
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local Assistant / Agent Configs
+.agents/
+.kaggle-skill/

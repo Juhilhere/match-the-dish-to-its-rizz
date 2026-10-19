@@ -1,0 +1,68 @@
+[{"stream_name":"stdout","time":8.685028485,"data":"Device: cuda\n"}
+,{"stream_name":"stdout","time":8.729861055,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":8.729884432,"data":"VRAM: 15.6 GB\n"}
+,{"stream_name":"stdout","time":13.918792119999999,"data":"Dataset root: /kaggle/input/competitions/match-the-dish-to-its-rizz\n"}
+,{"stream_name":"stdout","time":13.918826195,"data":"Output directory: /kaggle/working\n"}
+,{"stream_name":"stdout","time":14.14408295,"data":"Parsed 303 test queries\n"}
+,{"stream_name":"stdout","time":31.041127867,"data":"Loading google/siglip2-so400m-patch14-384...\n"}
+,{"stream_name":"stderr","time":31.514765879,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":31.742934446,"data":"[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":31.742983817,"data":"[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":62.656395077,"data":"\rLoading weights:   0%|          | 0/888 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 4/888 [00:00\u003c02:32,  5.80it/s]\rLoading weights:  39%|███▉      | 347/888 [00:00\u003c00:00, 593.43it/s]\rLoading weights:  84%|████████▍ | 747/888 [00:00\u003c00:00, 1253.13it/s]\rLoading weights: 100%|██████████| 888/888 [00:01\u003c00:00, 862.95it/s] \n"}
+,{"stream_name":"stdout","time":71.447261961,"data":"Loaded in 40.4s\n"}
+,{"stream_name":"stdout","time":71.447302721,"data":"Extracting 2000 images from test_gallery (4-view TTA)...\n"}
+,{"stream_name":"stdout","time":75.710669582,"data":"  [test_gallery] 16/2000 (3.8 imgs/s)\n"}
+,{"stream_name":"stdout","time":126.270392236,"data":"  [test_gallery] 256/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":182.988123836,"data":"  [test_gallery] 496/2000 (4.4 imgs/s)\n"}
+,{"stream_name":"stdout","time":239.901304528,"data":"  [test_gallery] 736/2000 (4.4 imgs/s)\n"}
+,{"stream_name":"stdout","time":297.242147514,"data":"  [test_gallery] 976/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":354.062885234,"data":"  [test_gallery] 1216/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":411.469508598,"data":"  [test_gallery] 1456/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":468.61711164,"data":"  [test_gallery] 1696/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":525.555556559,"data":"  [test_gallery] 1936/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":540.69382203,"data":"  [test_gallery] 2000/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":540.700898803,"data":"[test_gallery] Finished in 469.3s, shape: torch.Size([2000, 1152])\n"}
+,{"stream_name":"stdout","time":540.701824233,"data":"Extracting 2000 images from train_gallery (4-view TTA)...\n"}
+,{"stream_name":"stdout","time":544.488320015,"data":"  [train_gallery] 16/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":600.985775211,"data":"  [train_gallery] 256/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":657.451086083,"data":"  [train_gallery] 496/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":713.742810812,"data":"  [train_gallery] 736/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":769.8905489,"data":"  [train_gallery] 976/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":826.753695064,"data":"  [train_gallery] 1216/2000 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":883.52430516,"data":"  [train_gallery] 1456/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":940.277656403,"data":"  [train_gallery] 1696/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":997.144447757,"data":"  [train_gallery] 1936/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1012.326726471,"data":"  [train_gallery] 2000/2000 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1012.333386883,"data":"[train_gallery] Finished in 471.6s, shape: torch.Size([2000, 1152])\n"}
+,{"stream_name":"stdout","time":1018.455093962,"data":"Category text features shape: torch.Size([101, 1152])\n"}
+,{"stream_name":"stdout","time":1018.484313455,"data":"Category visual prototypes shape: torch.Size([101, 1152])\n"}
+,{"stream_name":"stdout","time":1021.87612429,"data":"Logistic Regression train acc: 97.45%\n"}
+,{"stream_name":"stdout","time":1022.167940945,"data":"Ridge train acc: 97.65%\n"}
+,{"stream_name":"stdout","time":1022.28641377,"data":"Extracting 1010 images from val_gallery (4-view TTA)...\n"}
+,{"stream_name":"stdout","time":1026.030534516,"data":"  [val_gallery] 16/1010 (4.3 imgs/s)\n"}
+,{"stream_name":"stdout","time":1083.04458564,"data":"  [val_gallery] 256/1010 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1139.446412804,"data":"  [val_gallery] 496/1010 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1196.387940322,"data":"  [val_gallery] 736/1010 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1253.099226132,"data":"  [val_gallery] 976/1010 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1261.121094318,"data":"  [val_gallery] 1010/1010 (4.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":1261.121996618,"data":"[val_gallery] Finished in 238.8s, shape: torch.Size([1010, 1152])\n"}
+,{"stream_name":"stdout","time":1262.40764412,"data":"Validation R-Precision:\n"}
+,{"stream_name":"stdout","time":1262.40768143,"data":"  Text (proper max_length): 0.96238\n"}
+,{"stream_name":"stdout","time":1262.407690036,"data":"  Visual Prototypes:       0.94752\n"}
+,{"stream_name":"stdout","time":1262.407695486,"data":"  K-NN Matching:           0.92772\n"}
+,{"stream_name":"stdout","time":1262.407701293,"data":"  Logistic Probe:          0.94950\n"}
+,{"stream_name":"stdout","time":1262.407707094,"data":"  Ridge Probe:             0.95347\n"}
+,{"stream_name":"stdout","time":1291.429751056,"data":"BEST VAL R-PRECISION: 0.96139\n"}
+,{"stream_name":"stdout","time":1291.429795489,"data":"Best Config: w_text=0.45, w_proto=0.25, w_ridge=0.10, w_probe=0.20, Temp=0.095\n"}
+,{"stream_name":"stdout","time":1291.9781819,"data":"Generated submission.csv: w_t=0.45, w_p=0.25, w_r=0.10, w_pr=0.20, T=0.095\n"}
+,{"stream_name":"stdout","time":1292.92309022,"data":"submission.csv: VALID (303 rows, sha256=e174d86a3d4e0cbe)\n"}
+,{"stream_name":"stdout","time":1292.933948219,"data":"submission_text_proto.csv: VALID (303 rows, sha256=1dcab705a60f6702)\n"}
+,{"stream_name":"stdout","time":1292.944316881,"data":"submission_5way.csv: VALID (303 rows, sha256=b7c1e955fd0c5f4c)\n"}
+,{"stream_name":"stdout","time":1292.944333706,"data":"Done. Files ready in /kaggle/working/\n"}
+,{"stream_name":"stderr","time":1298.676808084,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1298.676836518,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1298.895476449,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1298.895501347,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1299.706837154,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1300.676249987,"data":"[NbConvertApp] Writing 366493 bytes to __results__.html\n"}
+]

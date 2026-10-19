@@ -1,0 +1,102 @@
+[{"stream_name":"stdout","time":13.195120694,"data":"Device: cuda\n"}
+,{"stream_name":"stdout","time":13.242821641,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":13.242844419,"data":"VRAM: 15.6 GB\n"}
+,{"stream_name":"stdout","time":37.895733078,"data":"Dataset root: /kaggle/input/competitions/match-the-dish-to-its-rizz\n"}
+,{"stream_name":"stdout","time":37.895782965,"data":"Output directory: /kaggle/working\n"}
+,{"stream_name":"stdout","time":37.977132542,"data":"Categories: 101\n"}
+,{"stream_name":"stdout","time":37.97715863,"data":"Train gallery: 2000 images (505 queries)\n"}
+,{"stream_name":"stdout","time":37.977163293,"data":"Test gallery: 2000 images (303 queries)\n"}
+,{"stream_name":"stdout","time":37.977166774,"data":"Validation available: True\n"}
+,{"stream_name":"stdout","time":38.154797942,"data":"Parsed all 303 test queries successfully\n"}
+,{"stream_name":"stdout","time":38.168625905,"data":"Queries per category: [3]\n"}
+,{"stream_name":"stdout","time":59.895983519,"data":"\n"}
+,{"stream_name":"stdout","time":59.896035569,"data":"Loading model: google/siglip2-so400m-patch14-384...\n"}
+,{"stream_name":"stderr","time":60.456116779,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":60.718686147,"data":"[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":60.718710858,"data":"[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":88.761116139,"data":"\rLoading weights:   0%|          | 0/888 [00:00\u003c?, ?it/s]\rLoading weights:  12%|█▏        | 106/888 [00:00\u003c00:00, 934.26it/s]\rLoading weights:  26%|██▌       | 232/888 [00:00\u003c00:00, 1114.89it/s]\rLoading weights:  39%|███▉      | 346/888 [00:00\u003c00:00, 1097.71it/s]\rLoading weights:  52%|█████▏    | 465/888 [00:00\u003c00:00, 1130.58it/s]\rLoading weights:  65%|██████▌   | 579/888 [00:00\u003c00:00, 1127.20it/s]\rLoading weights:  79%|███████▉  | 703/888 [00:00\u003c00:00, 1160.71it/s]\rLoading weights:  92%|█████████▏| 820/888 [00:00\u003c00:00, 1127.04it/s]\rLoading weights: 100%|██████████| 888/888 [00:00\u003c00:00, 1123.23it/s]\n"}
+,{"stream_name":"stdout","time":98.345436566,"data":"Model loaded in 38.4s\n"}
+,{"stream_name":"stdout","time":98.345497799,"data":"\n"}
+,{"stream_name":"stdout","time":98.345502651,"data":"Extracting 2000 images from 'test_gallery' (batch_size=24)...\n"}
+,{"stream_name":"stdout","time":102.454986884,"data":"  [test_gallery] 24/2000 (5.8 imgs/s)\n"}
+,{"stream_name":"stdout","time":139.954228186,"data":"  [test_gallery] 384/2000 (9.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":180.821580367,"data":"  [test_gallery] 744/2000 (9.0 imgs/s)\n"}
+,{"stream_name":"stdout","time":225.578615629,"data":"  [test_gallery] 1104/2000 (8.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":269.491307244,"data":"  [test_gallery] 1464/2000 (8.6 imgs/s)\n"}
+,{"stream_name":"stdout","time":313.734098469,"data":"  [test_gallery] 1824/2000 (8.5 imgs/s)\n"}
+,{"stream_name":"stdout","time":335.231482328,"data":"  [test_gallery] 2000/2000 (8.4 imgs/s)\n"}
+,{"stream_name":"stdout","time":335.234880167,"data":"[test_gallery] Finished in 236.9s, feature shape: torch.Size([2000, 1152])\n"}
+,{"stream_name":"stdout","time":335.235666203,"data":"\n"}
+,{"stream_name":"stdout","time":335.235687771,"data":"Extracting 2000 images from 'train_gallery' (batch_size=24)...\n"}
+,{"stream_name":"stdout","time":338.14829732,"data":"  [train_gallery] 24/2000 (8.2 imgs/s)\n"}
+,{"stream_name":"stdout","time":382.511277744,"data":"  [train_gallery] 384/2000 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":426.859554229,"data":"  [train_gallery] 744/2000 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":471.313399445,"data":"  [train_gallery] 1104/2000 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":515.595588306,"data":"  [train_gallery] 1464/2000 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":559.890322967,"data":"  [train_gallery] 1824/2000 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":581.539069633,"data":"  [train_gallery] 2000/2000 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":581.541169162,"data":"[train_gallery] Finished in 246.3s, feature shape: torch.Size([2000, 1152])\n"}
+,{"stream_name":"stdout","time":581.541772533,"data":"\n"}
+,{"stream_name":"stdout","time":581.541794733,"data":"Building category representations...\n"}
+,{"stream_name":"stdout","time":583.964810383,"data":"Category text features shape: torch.Size([101, 1152])\n"}
+,{"stream_name":"stdout","time":584.005062938,"data":"Category visual prototypes shape: torch.Size([101, 1152])\n"}
+,{"stream_name":"stdout","time":584.04239815,"data":"\n"}
+,{"stream_name":"stdout","time":584.042454463,"data":"Computing k-NN visual matching scores...\n"}
+,{"stream_name":"stdout","time":584.17419437,"data":"Fitting multi-class Logistic Regression probe...\n"}
+,{"stream_name":"stdout","time":587.482242897,"data":"Logistic Regression train accuracy: 97.60%\n"}
+,{"stream_name":"stdout","time":587.510581266,"data":"Fitting Ridge probe...\n"}
+,{"stream_name":"stdout","time":587.811545642,"data":"Ridge train accuracy: 97.80%\n"}
+,{"stream_name":"stdout","time":587.839180966,"data":"\n"}
+,{"stream_name":"stdout","time":587.839247075,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":587.839256403,"data":"VALIDATION BENCHMARK \u0026 WEIGHT SELECTION\n"}
+,{"stream_name":"stdout","time":587.839287042,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":587.907556329,"data":"\n"}
+,{"stream_name":"stdout","time":587.907592434,"data":"Extracting 1010 images from 'val_gallery' (batch_size=24)...\n"}
+,{"stream_name":"stdout","time":590.893353905,"data":"  [val_gallery] 24/1010 (8.0 imgs/s)\n"}
+,{"stream_name":"stdout","time":635.770258295,"data":"  [val_gallery] 384/1010 (8.0 imgs/s)\n"}
+,{"stream_name":"stdout","time":680.273597845,"data":"  [val_gallery] 744/1010 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":713.201352107,"data":"  [val_gallery] 1010/1010 (8.1 imgs/s)\n"}
+,{"stream_name":"stdout","time":713.202432417,"data":"[val_gallery] Finished in 125.3s, feature shape: torch.Size([1010, 1152])\n"}
+,{"stream_name":"stdout","time":713.262878071,"data":"\n"}
+,{"stream_name":"stdout","time":713.263885402,"data":"--- Component Validation Performance (Sinkhorn T=0.125) ---\n"}
+,{"stream_name":"stdout","time":714.521545935,"data":"  1. Pure Text (Friend's Baseline) : 0.09010\n"}
+,{"stream_name":"stdout","time":714.521605835,"data":"  2. Visual Prototypes             : 0.94257\n"}
+,{"stream_name":"stdout","time":714.521626063,"data":"  3. K-NN Metric Matching          : 0.92772\n"}
+,{"stream_name":"stdout","time":714.521631126,"data":"  4. Logistic Regression Probe     : 0.94653\n"}
+,{"stream_name":"stdout","time":714.521635673,"data":"  5. Ridge Regression Probe        : 0.95050\n"}
+,{"stream_name":"stdout","time":714.521640779,"data":"\n"}
+,{"stream_name":"stdout","time":714.521662814,"data":"Searching optimal ensemble blend weights on validation...\n"}
+,{"stream_name":"stdout","time":739.964825733,"data":"\n"}
+,{"stream_name":"stdout","time":739.964878535,"data":"BEST VALIDATION R-PRECISION: 0.94950\n"}
+,{"stream_name":"stdout","time":739.964882811,"data":"Best Configuration: w_text=0.45, w_proto=0.35, w_probe=0.20, w_knn=0.00, Temp=0.110\n"}
+,{"stream_name":"stdout","time":739.964885604,"data":"Gain over friend's baseline: +85.941% (+0.85941 R-precision)\n"}
+,{"stream_name":"stdout","time":739.964888108,"data":"\n"}
+,{"stream_name":"stdout","time":739.964890348,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":739.964892813,"data":"GENERATING VERIFIED TEST SUBMISSIONS\n"}
+,{"stream_name":"stdout","time":739.964895124,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":740.583105906,"data":"1. submission.csv (PRIMARY BEST ENSEMBLE: w_t=0.45, w_p=0.35, w_pr=0.20, w_k=0.00, T=0.11)\n"}
+,{"stream_name":"stdout","time":740.944439904,"data":"2. submission_pure_friend_baseline.csv (Friend's exact 0.97105 baseline)\n"}
+,{"stream_name":"stdout","time":741.311529239,"data":"3. submission_text_proto_5050.csv (50/50 Text + Visual Prototype Blend)\n"}
+,{"stream_name":"stdout","time":741.863522557,"data":"4. submission_text_proto_probe.csv (Text + Prototype + Probe Blend)\n"}
+,{"stream_name":"stdout","time":742.281119956,"data":"5. submission_hungarian.csv (Hungarian Bipartite Assignment)\n"}
+,{"stream_name":"stdout","time":742.281162133,"data":"\n"}
+,{"stream_name":"stdout","time":742.281166093,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":742.281169933,"data":"FINAL SUBMISSION INTEGRITY VERIFICATION\n"}
+,{"stream_name":"stdout","time":742.281188357,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":742.312085565,"data":"  submission.csv                      : VALID (303 rows, sha256=dd2afeb4eada18a9)\n"}
+,{"stream_name":"stdout","time":742.323474785,"data":"  submission_pure_friend_baseline.csv : VALID (303 rows, sha256=fa99f69046fb6c61)\n"}
+,{"stream_name":"stdout","time":742.334936476,"data":"  submission_text_proto_5050.csv      : VALID (303 rows, sha256=8352d439427d7177)\n"}
+,{"stream_name":"stdout","time":742.34630878,"data":"  submission_text_proto_probe.csv     : VALID (303 rows, sha256=a0add398a099185f)\n"}
+,{"stream_name":"stdout","time":742.357733624,"data":"  submission_hungarian.csv            : VALID (303 rows, sha256=adbd2008c7dde6c2)\n"}
+,{"stream_name":"stdout","time":742.35777344,"data":"\n"}
+,{"stream_name":"stdout","time":742.357782306,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":742.357787373,"data":"ALL TASKS COMPLETED SUCCESSFULLY!\n"}
+,{"stream_name":"stdout","time":742.357791897,"data":"Primary submission file ready at: /kaggle/working/submission.csv\n"}
+,{"stream_name":"stdout","time":742.3577963,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":750.331256665,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":750.33131369,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":750.601126578,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":750.601164011,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":751.521252567,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":752.715051505,"data":"[NbConvertApp] Writing 385716 bytes to __results__.html\n"}
+]

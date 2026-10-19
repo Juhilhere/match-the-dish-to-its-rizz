@@ -1,0 +1,33 @@
+[{"stream_name":"stdout","time":11.19002849,"data":"Device: cpu\n"}
+,{"stream_name":"stdout","time":21.724296965,"data":"Dataset root: /kaggle/input/competitions/match-the-dish-to-its-rizz\n"}
+,{"stream_name":"stdout","time":21.724356242,"data":"Output directory: /kaggle/working\n"}
+,{"stream_name":"stdout","time":21.814486941,"data":"Categories: 101\n"}
+,{"stream_name":"stdout","time":21.814526292,"data":"Train gallery: 2000 images (505 queries)\n"}
+,{"stream_name":"stdout","time":21.814533056,"data":"Test gallery: 2000 images (303 queries)\n"}
+,{"stream_name":"stdout","time":21.814538282,"data":"Validation available: True\n"}
+,{"stream_name":"stdout","time":22.038323213,"data":"Parsed all 303 test queries successfully\n"}
+,{"stream_name":"stdout","time":22.056380626,"data":"Queries per category: [3]\n"}
+,{"stream_name":"stdout","time":55.346991031,"data":"\n"}
+,{"stream_name":"stdout","time":55.347045568,"data":"Loading model: google/siglip2-so400m-patch14-384...\n"}
+,{"stream_name":"stderr","time":55.653720065,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":55.779275821,"data":"[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":55.779329299,"data":"[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":55.783974603,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":85.652836558,"data":"\rLoading weights:   0%|          | 0/888 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 4/888 [00:00\u003c00:27, 32.20it/s]\rLoading weights:  25%|██▍       | 218/888 [00:00\u003c00:00, 1093.47it/s]\rLoading weights:  38%|███▊      | 333/888 [00:00\u003c00:00, 1009.74it/s]\rLoading weights:  49%|████▉     | 438/888 [00:00\u003c00:00, 996.68it/s] \rLoading weights:  61%|██████    | 540/888 [00:00\u003c00:00, 982.10it/s]\rLoading weights:  72%|███████▏  | 640/888 [00:00\u003c00:00, 946.21it/s]\rLoading weights:  83%|████████▎ | 736/888 [00:00\u003c00:00, 948.99it/s]\rLoading weights:  94%|█████████▎| 832/888 [00:00\u003c00:00, 906.15it/s]\rLoading weights: 100%|██████████| 888/888 [00:00\u003c00:00, 914.46it/s]\n"}
+,{"stream_name":"stdout","time":91.027310158,"data":"Model loaded in 35.7s\n"}
+,{"stream_name":"stdout","time":91.027387324,"data":"\n"}
+,{"stream_name":"stdout","time":91.027395555,"data":"Extracting 2000 images from 'test_gallery' (batch_size=24)...\n"}
+,{"stream_name":"stderr","time":1516.323019126,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1516.327918644,"data":"  File \"/kaggle/src/script.py\", line 192, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1516.328019465,"data":"    test_feats = extract_gallery_features(ROOT / 'test_gallery', test_ids, batch_size=24, desc=\"test_gallery\")\n"}
+,{"stream_name":"stderr","time":1516.32802646,"data":"  File \"/kaggle/src/script.py\", line 170, in extract_gallery_features\n"}
+,{"stream_name":"stderr","time":1516.32803056,"data":"    fo = model.get_image_features(**inp_o).float()\n"}
+,{"stream_name":"stderr","time":1516.328034107,"data":"         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1516.32803776,"data":"AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'float'\n"}
+,{"stream_name":"stderr","time":1523.080163575,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1523.080226536,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1523.561909957,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1523.561999277,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1525.102963487,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1526.70249473,"data":"[NbConvertApp] Writing 382785 bytes to __results__.html\n"}
+]
