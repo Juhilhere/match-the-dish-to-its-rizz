@@ -1,0 +1,113 @@
+[{"stream_name":"stdout","time":13.529655532,"data":"Device: cuda\n"}
+,{"stream_name":"stdout","time":13.578383364,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":13.578426173,"data":"VRAM: 15.6 GB\n"}
+,{"stream_name":"stdout","time":18.796533242,"data":"Dataset root: /kaggle/input/competitions/match-the-dish-to-its-rizz\n"}
+,{"stream_name":"stdout","time":18.796575808,"data":"Output directory: /kaggle/working\n"}
+,{"stream_name":"stdout","time":18.887288391,"data":"Validation available: 202 queries, 1010 images\n"}
+,{"stream_name":"stdout","time":19.07140862,"data":"Parsed 303 test queries\n"}
+,{"stream_name":"stdout","time":19.254434965,"data":"Mapped 101 categories to Food-101 schema\n"}
+,{"stream_name":"stdout","time":40.370128948,"data":"Loading google/siglip2-so400m-patch14-384...\n"}
+,{"stream_name":"stderr","time":40.605251885,"data":"[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":40.605277135,"data":"[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.\n"}
+,{"stream_name":"stderr","time":40.69080183,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":68.287978088,"data":"\rLoading weights:   0%|          | 0/888 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 4/888 [00:00\u003c01:36,  9.12it/s]\rLoading weights:  52%|█████▏    | 465/888 [00:00\u003c00:00, 1136.13it/s]\rLoading weights:  83%|████████▎ | 734/888 [00:00\u003c00:00, 1116.53it/s]\rLoading weights: 100%|██████████| 888/888 [00:00\u003c00:00, 962.57it/s] \n"}
+,{"stream_name":"stdout","time":72.887945317,"data":"Loaded google/siglip2-so400m-patch14-384 in 32.5s\n"}
+,{"stream_name":"stdout","time":72.894708931,"data":"Extracting SigLIP2 features for 2000 test_gallery...\n"}
+,{"stream_name":"stdout","time":77.532792853,"data":"  [test_gallery] 16/2000 (3.4 imgs/s)\n"}
+,{"stream_name":"stdout","time":124.410154513,"data":"  [test_gallery] 256/2000 (5.0 imgs/s)\n"}
+,{"stream_name":"stdout","time":175.393585813,"data":"  [test_gallery] 496/2000 (4.8 imgs/s)\n"}
+,{"stream_name":"stdout","time":226.943490561,"data":"  [test_gallery] 736/2000 (4.8 imgs/s)\n"}
+,{"stream_name":"stdout","time":278.446014993,"data":"  [test_gallery] 976/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":330.009658829,"data":"  [test_gallery] 1216/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":381.293684915,"data":"  [test_gallery] 1456/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":432.427256336,"data":"  [test_gallery] 1696/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":483.404844048,"data":"  [test_gallery] 1936/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":496.967559613,"data":"  [test_gallery] 2000/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":496.97580606,"data":"[test_gallery] Finished in 424.1s, shape: torch.Size([2000, 1152])\n"}
+,{"stream_name":"stdout","time":496.981556854,"data":"Extracting SigLIP2 features for 2000 train_gallery...\n"}
+,{"stream_name":"stdout","time":500.413022223,"data":"  [train_gallery] 16/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":551.59193054,"data":"  [train_gallery] 256/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":602.50806117,"data":"  [train_gallery] 496/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":653.288852025,"data":"  [train_gallery] 736/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":704.155515563,"data":"  [train_gallery] 976/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":754.93532911,"data":"  [train_gallery] 1216/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":805.928661813,"data":"  [train_gallery] 1456/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":857.361724569,"data":"  [train_gallery] 1696/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":908.409558779,"data":"  [train_gallery] 1936/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":922.018170748,"data":"  [train_gallery] 2000/2000 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":922.024824228,"data":"[train_gallery] Finished in 425.0s, shape: torch.Size([2000, 1152])\n"}
+,{"stream_name":"stdout","time":922.029968781,"data":"Extracting SigLIP2 features for 1010 val_gallery...\n"}
+,{"stream_name":"stdout","time":925.418693472,"data":"  [val_gallery] 16/1010 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":976.284115,"data":"  [val_gallery] 256/1010 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":1026.993492631,"data":"  [val_gallery] 496/1010 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":1077.722443226,"data":"  [val_gallery] 736/1010 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":1128.362249164,"data":"  [val_gallery] 976/1010 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":1135.5965087,"data":"  [val_gallery] 1010/1010 (4.7 imgs/s)\n"}
+,{"stream_name":"stdout","time":1135.597478454,"data":"[val_gallery] Finished in 213.6s, shape: torch.Size([1010, 1152])\n"}
+,{"stream_name":"stdout","time":1141.052848987,"data":"SigLIP text features: torch.Size([101, 1152])\n"}
+,{"stream_name":"stdout","time":1141.594837872,"data":"Ridge train accuracy: 97.65%\n"}
+,{"stream_name":"stdout","time":1144.811767401,"data":"Logistic Regression train accuracy: 97.45%\n"}
+,{"stream_name":"stdout","time":1144.934428859,"data":"Loading classifier skylord/swin-finetuned-food101...\n"}
+,{"stream_name":"stderr","time":1147.143385466,"data":"\rLoading weights:   0%|          | 0/425 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 425/425 [00:00\u003c00:00, 10896.16it/s]\n"}
+,{"stream_name":"stdout","time":1148.643568782,"data":"Loaded skylord/swin-finetuned-food101 in 3.7s\n"}
+,{"stream_name":"stdout","time":1171.479576613,"data":"[swin_test] Finished in 22.8s, shape: (2000, 101)\n"}
+,{"stream_name":"stdout","time":1171.479626056,"data":"Loading classifier skylord/swin-finetuned-food101...\n"}
+,{"stream_name":"stderr","time":1172.13271294,"data":"\rLoading weights:   0%|          | 0/425 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 425/425 [00:00\u003c00:00, 11369.58it/s]\n"}
+,{"stream_name":"stdout","time":1172.298017332,"data":"Loaded skylord/swin-finetuned-food101 in 0.8s\n"}
+,{"stream_name":"stdout","time":1185.106019057,"data":"[swin_val] Finished in 12.8s, shape: (1010, 101)\n"}
+,{"stream_name":"stdout","time":1185.106068778,"data":"Loading classifier nateraw/vit-base-food101...\n"}
+,{"stream_name":"stderr","time":1187.052443983,"data":"\rLoading weights:   0%|          | 0/200 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 200/200 [00:00\u003c00:00, 2273.82it/s]\n"}
+,{"stream_name":"stdout","time":1187.1688097,"data":"Loaded nateraw/vit-base-food101 in 2.1s\n"}
+,{"stream_name":"stdout","time":1203.590148046,"data":"[vit_test] Finished in 16.4s, shape: (2000, 101)\n"}
+,{"stream_name":"stdout","time":1203.5902405,"data":"Loading classifier nateraw/vit-base-food101...\n"}
+,{"stream_name":"stderr","time":1204.057823489,"data":"\rLoading weights:   0%|          | 0/200 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 200/200 [00:00\u003c00:00, 2658.78it/s]\n"}
+,{"stream_name":"stdout","time":1204.173311918,"data":"Loaded nateraw/vit-base-food101 in 0.6s\n"}
+,{"stream_name":"stdout","time":1212.422748955,"data":"[vit_val] Finished in 8.2s, shape: (1010, 101)\n"}
+,{"stream_name":"stdout","time":1212.431259831,"data":"=== Validation Results ===\n"}
+,{"stream_name":"stdout","time":1212.802696823,"data":"SigLIP Only Sinkhorn (T=0.080) R-prec: 0.96139\n"}
+,{"stream_name":"stdout","time":1213.169726687,"data":"SigLIP Only Sinkhorn (T=0.085) R-prec: 0.96139\n"}
+,{"stream_name":"stdout","time":1213.547694052,"data":"SigLIP Only Sinkhorn (T=0.090) R-prec: 0.96139\n"}
+,{"stream_name":"stdout","time":1213.913897085,"data":"SigLIP Only Sinkhorn (T=0.095) R-prec: 0.96139\n"}
+,{"stream_name":"stdout","time":1214.29093885,"data":"SigLIP Only Sinkhorn (T=0.100) R-prec: 0.96139\n"}
+,{"stream_name":"stdout","time":1214.644395086,"data":"SigLIP Only Sinkhorn (T=0.125) R-prec: 0.96040\n"}
+,{"stream_name":"stdout","time":1215.012619685,"data":"SigLIP + Swin (w=0.15, T=0.085) R-prec: 0.96832\n"}
+,{"stream_name":"stdout","time":1215.359556401,"data":"SigLIP + Swin (w=0.15, T=0.090) R-prec: 0.96832\n"}
+,{"stream_name":"stdout","time":1215.718288945,"data":"SigLIP + Swin (w=0.15, T=0.095) R-prec: 0.96733\n"}
+,{"stream_name":"stdout","time":1216.073698847,"data":"SigLIP + Swin (w=0.25, T=0.085) R-prec: 0.97921\n"}
+,{"stream_name":"stdout","time":1216.427771897,"data":"SigLIP + Swin (w=0.25, T=0.090) R-prec: 0.97921\n"}
+,{"stream_name":"stdout","time":1216.781299523,"data":"SigLIP + Swin (w=0.25, T=0.095) R-prec: 0.97921\n"}
+,{"stream_name":"stdout","time":1217.143767967,"data":"SigLIP + Swin (w=0.35, T=0.085) R-prec: 0.98416\n"}
+,{"stream_name":"stdout","time":1217.497102948,"data":"SigLIP + Swin (w=0.35, T=0.090) R-prec: 0.98416\n"}
+,{"stream_name":"stdout","time":1217.856891809,"data":"SigLIP + Swin (w=0.35, T=0.095) R-prec: 0.98416\n"}
+,{"stream_name":"stdout","time":1218.230633365,"data":"Full Ensemble (w_cls=0.20, T=0.085) R-prec: 0.96634\n"}
+,{"stream_name":"stdout","time":1218.610248368,"data":"Full Ensemble (w_cls=0.20, T=0.090) R-prec: 0.96634\n"}
+,{"stream_name":"stdout","time":1218.984737949,"data":"Full Ensemble (w_cls=0.20, T=0.095) R-prec: 0.96733\n"}
+,{"stream_name":"stdout","time":1219.342573531,"data":"Full Ensemble (w_cls=0.30, T=0.085) R-prec: 0.97228\n"}
+,{"stream_name":"stdout","time":1219.712396529,"data":"Full Ensemble (w_cls=0.30, T=0.090) R-prec: 0.97228\n"}
+,{"stream_name":"stdout","time":1220.077714095,"data":"Full Ensemble (w_cls=0.30, T=0.095) R-prec: 0.97228\n"}
+,{"stream_name":"stdout","time":1220.441438977,"data":"Full Ensemble (w_cls=0.40, T=0.085) R-prec: 0.97327\n"}
+,{"stream_name":"stdout","time":1220.80937761,"data":"Full Ensemble (w_cls=0.40, T=0.090) R-prec: 0.97327\n"}
+,{"stream_name":"stdout","time":1221.205590447,"data":"Full Ensemble (w_cls=0.40, T=0.095) R-prec: 0.97327\n"}
+,{"stream_name":"stdout","time":1221.90376219,"data":"Saved submission_t080.csv\n"}
+,{"stream_name":"stdout","time":1222.570077138,"data":"Saved submission_t085.csv\n"}
+,{"stream_name":"stdout","time":1223.216759085,"data":"Saved submission_t090.csv\n"}
+,{"stream_name":"stdout","time":1223.87122956,"data":"Saved submission_t095.csv\n"}
+,{"stream_name":"stdout","time":1224.537749532,"data":"Saved submission_t100.csv\n"}
+,{"stream_name":"stdout","time":1225.226894992,"data":"Saved submission_food_heavy_t090.csv\n"}
+,{"stream_name":"stdout","time":1225.879750288,"data":"Saved submission_siglip_pure_t095.csv\n"}
+,{"stream_name":"stdout","time":1225.909482987,"data":"submission_siglip_pure_t095.csv : VALID (303 rows, sha256=ba52ecbe4ea5ac19)\n"}
+,{"stream_name":"stdout","time":1225.919467864,"data":"submission_t095.csv             : VALID (303 rows, sha256=a9f891e15ce83a3f)\n"}
+,{"stream_name":"stdout","time":1225.929363461,"data":"submission_t100.csv             : VALID (303 rows, sha256=a69d4752b670581f)\n"}
+,{"stream_name":"stdout","time":1225.939802907,"data":"submission.csv                  : VALID (303 rows, sha256=a76831b4ca96d7da)\n"}
+,{"stream_name":"stdout","time":1225.950045672,"data":"submission_t090.csv             : VALID (303 rows, sha256=a76831b4ca96d7da)\n"}
+,{"stream_name":"stdout","time":1225.960236581,"data":"submission_food_heavy_t090.csv  : VALID (303 rows, sha256=8b0d2ccd59ff99aa)\n"}
+,{"stream_name":"stdout","time":1225.97028296,"data":"submission_t080.csv             : VALID (303 rows, sha256=24befa330059bf91)\n"}
+,{"stream_name":"stdout","time":1225.980839242,"data":"submission_t085.csv             : VALID (303 rows, sha256=4d1fed76b06ce41b)\n"}
+,{"stream_name":"stdout","time":1225.980857825,"data":"All pipeline tasks completed successfully.\n"}
+,{"stream_name":"stderr","time":1233.600810555,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1233.600838941,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1233.878810151,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1233.87883847,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1234.740589277,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1235.892557089,"data":"[NbConvertApp] Writing 381177 bytes to __results__.html\n"}
+]
